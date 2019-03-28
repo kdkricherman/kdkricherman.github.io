@@ -3,9 +3,15 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<style> table, tr, th, td {
-border: 1px solid black; border-collapse:collapse;
+<style>
+table, tr, th, td {
+  border: 1px solid black; border-collapse: collapse;
 }
+.subject1{background-color:lightGray;}
+.subject2{background-color:tomato;}
+.subject3{background-color:orange;}
+.subject4{background-color:slateblue;}
+.subject5{background-color:dodgerblue;}
 </style> <!-- border-collapse: collapse 단선으로, 반대는 separate -->
 <title>HTML5  테이블 테스트 실습</title>
 </head>
@@ -15,25 +21,25 @@ border: 1px solid black; border-collapse:collapse;
 <th></th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
 </tr>
 <tr>
-<td>1교시</td><td></td><td></td><td>DB</td><td></td><td></td>
+<td>1교시</td><td></td><td></td><td class="subject4" rowspan="2">DB</td><td></td><td></td>
 </tr>
 <tr>
-<td>2교시</td><td></td><td></td><td>DB</td><td>인터넷</td><td></td>
+<td>2교시</td><td></td><td></td><td class="subject1" rowspan="2">인터넷</td><td></td>
 </tr>
 <tr>
-<td>3교시</td><td></td><td>DB</td><td></td><td>인터넷</td><td></td>
+<td>3교시</td><td></td><td class="subject4" rowspan="2">DB</td><td></td><td></td>
 </tr>
-<td>4교시</td><td></td><td>DB</td><td></td><td></td><td></td>
+<td>4교시</td><td></td><td></td><td></td><td></td>
 </tr>
-<td>5교시</td><td></td><td></td><td></td><td>C#</td><td></td>
+<td>5교시</td><td></td><td></td><td></td><td class="subject3" rowspan="2">C#</td><td></td>
 </tr>
-<td>6교시</td><td></td><td></td><td></td><td>C#</td><td></td>
+<td>6교시</td><td></td><td></td><td></td><td></td>
 </tr>
-<td>7교시</td><td></td><td>운영체제</td><td></td><td></td><td></td>
+<td>7교시</td><td></td><td class="subject2" rowspan="2">운영체제</td><td></td><td></td><td></td>
 </tr>
-<td>8교시</td><td></td><td>운영체제</td><td>인터넷</td><td></td><td></td>
+<td>8교시</td><td></td><td class="subject1" rowspan="2">인터넷</td><td></td><td></td>
 </tr>
-<td>9교시</td><td>운영체제</td><td></td><td>인터넷</td><td></td><td></td>
+<td>9교시</td><td class="subject2">운영체제</td><td></td><td></td><td></td>
 </tr>
 </talbe>
 </body></html>
